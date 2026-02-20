@@ -133,11 +133,21 @@
     /* 장애물 */
     .hazard{
       position:absolute;
-      width:22px; height:22px;
-      background: var(--danger);
-      border:2px solid #7a1f1f;
-      border-radius:6px;
-      box-shadow: 0 0 0 2px rgba(0,0,0,.22) inset;
+      width:28px;
+      height:28px;
+
+      background-image: url("https://cdn-icons-png.flaticon.com/512/564/564619.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      border-radius: 6px;
+      animation: bombPulse .9s ease-in-out infinite;
+      filter: drop-shadow(0 0 6px rgba(255,80,80,.5));
+    }
+    @keyframes bombPulse{
+      0%,100% { transform: scale(1); }
+      50% { transform: scale(1.08); }
     }
 
     /* 코인(점수) */
@@ -215,7 +225,7 @@
     .panel p{ margin:0 0 12px; color:var(--muted); font-size:9px; line-height:1.6; }
     .panel .big{ font-size:11px; color:var(--txt); margin-bottom:10px; }
 
-    /* 점수 팝업(+1) */
+    /* XGP채굴갯 팝업(+1) */
     .pop{
       position:absolute;
       font-size:10px;
@@ -235,7 +245,7 @@
 
   <div class="wrap">
     <div class="title">
-      <h1>PIXEL DODGE</h1>
+      <h1>XGP 채굴게임</h1>
       <div style="font-size:9px; color:var(--muted);">A / D 또는 드래그</div>
     </div>
 
