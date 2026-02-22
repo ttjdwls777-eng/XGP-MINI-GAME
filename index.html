@@ -184,20 +184,18 @@
 
     /* 코인(술먹은양) */
     .coin{
-      position:absolute;
-      width:26px;
-      height:26px;
+  position:absolute;
+  width:26px;
+  height:26px;
 
-      /* ✅ CHANGED: 무료 술병 이미지로 교체 */
-      /* .coin 안에 이 줄만 교체 */
-background-image: url("https://raw.githubusercontent.com/ttjdwls777-eng/XGP-MINI-GAME/main/%EC%88%A0%EB%B3%91.jpg");
+  background-image: url("https://raw.githubusercontent.com/ttjdwls777-eng/XGP-MINI-GAME/main/%EC%88%A0%EB%B3%91.jpg");
 
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      border-radius:6px;
-      animation: coinPulse .8s ease-in-out infinite;
-    }
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius:6px;
+  animation: coinPulse .8s ease-in-out infinite;
+}
     @keyframes coinPulse{
       0%,100%{ transform: scale(1); filter: brightness(1); }
       50%{ transform: scale(1.08); filter: brightness(1.15); }
